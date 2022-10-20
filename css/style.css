@@ -1,0 +1,121 @@
+
+/* background: radial-gradient(circle, rgba(195, 174, 250, 1) 0%, rgba(254, 249, 249, 1) 50%, rgba(254, 249, 249, 1) 100%); */
+
+:root{
+    --prim: #c3aefa;
+    --sec: #101010;
+    --bgw: #fff;
+    --grad: linear-gradient(90deg, rgba(195, 174, 250, 1) 0%, rgba(254, 249, 249, 1) 50%, rgba(240, 222, 252, 1) 100%);;
+    --primfont: 'Playfair Display', serif;
+    --secfont: 'Cedarville Cursive', cursive;
+}
+*{
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    /* scroll-behavior: smooth; */
+    font-family: var(--primfont);
+}
+.logo {
+    font-family: var(--primfont);
+    /* color:var(--sec); */
+    padding-top: 20px;
+}
+.nav-list-item:hover{
+    transform: scale(1.1);
+    transition: .5s;
+}
+.about-section {
+    background-color:var(--bgw);
+}
+.about-img{
+    border: dashed  #c3aefa;
+}
+.pro-fig {
+    border:thin #fff solid;
+    /* display: flex; */
+    max-width: 250px;
+    box-shadow: 0px 4px 4px #c3aefa;
+}
+.pro-info {
+    font-size: 12px;
+}
+.pro-img {
+    max-width: 250px;
+    max-height: 150px;
+}
+.pro-cap {
+    background: var(--grad);
+}
+.pro-view {
+    list-style-type: none;
+}
+.fig-img {
+    margin:30px;
+    border:dashed #101010;
+}
+.contact-section{
+    background-color: var(--prim);
+    margin-bottom: 0px;
+    
+}
+.hero-section{
+    position: relative;
+    background-color: #c3aefa;
+    max-height: 600px;
+    margin: 50px;
+    border: 1px #fff;
+    box-shadow: 0px 10px 10px 10px #c3aefa;
+}
+.cont-link{
+        padding-right: 20px;
+        cursor: pointer;
+    }
+.info, .info2, .info3 {
+        font-size: 25px;
+        list-style-type: none;
+    }
+    .info{
+        position: absolute;
+        top: 20%;
+        right: 32%;
+    }
+    .info2 {
+        position: absolute;
+        top:30% ;
+        right:32%;
+    }
+    .info3 {
+        position: absolute;
+        top: 40%;
+        right: 32%;
+    }
+
+    @media(max-width:768px) {
+        .info{
+            font-size: 18px;
+            margin-top: 77%;
+            margin-right: 30px;
+        }
+        .info2{
+            font-size: 18px;
+            margin-top: 69%;
+            margin-right: 30px;
+        }
+        .info3{
+            font-size: 18px;
+            margin-top: 62%;
+            margin-right: 30px;
+        }
+        .cont-list{
+            padding-top:30px;
+        }
+    }
+.cont-list{
+        list-style-type: none;
+        /* margin-right: 20px; */
+        margin-top: 5px;
+    }
+
